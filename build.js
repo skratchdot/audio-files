@@ -34,9 +34,9 @@ var jsonData = files.map((f) => {
   obj.group = obj.dir.split('/')[1];
   return obj;
 });
-var groups = _.pluck(jsonData,'dir');
-groups = _.uniq(groups);
 var byDir = _.groupBy(jsonData, 'dir');
+var dirs = _.uniq(_.pluck(jsonData,'dir'));
+var groups = _.uniq(_.pluck(jsonData,'group')).slice(1);
 var readme = `# audio-files
 
 A collection of test audio files for my web audio projects.
@@ -61,4 +61,6 @@ Object.keys(byDir).forEach(function (dir) {
 
 fs.writeFileSync('./README.md', readme, 'utf-8');
 fs.writeFileSync('./index.html', marked(readme), 'utf-8');
+fs.writeFileSync('./dirs.json', JSON.stringify(dirs, null, '  '), 'utf-8');
+fs.writeFileSync('./groups.json', JSON.stringify(groups, null, '  '), 'utf-8');
 fs.writeFileSync('./data.json', JSON.stringify(jsonData, null, '  '), 'utf-8');

@@ -39845,6 +39845,24 @@
   {
     "root": "/",
     "dir": "/",
+    "base": "dirs.json",
+    "ext": ".json",
+    "name": "dirs",
+    "file": "/dirs.json",
+    "group": ""
+  },
+  {
+    "root": "/",
+    "dir": "/",
+    "base": "groups.json",
+    "ext": ".json",
+    "name": "groups",
+    "file": "/groups.json",
+    "group": ""
+  },
+  {
+    "root": "/",
+    "dir": "/",
     "base": "index.html",
     "ext": ".html",
     "name": "index",

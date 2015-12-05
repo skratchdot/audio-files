@@ -16,6 +16,8 @@ A collection of test audio files for my web audio projects.
 - [README.md](http://projects.skratchdot.com/audio-files/README.md)
 - [build.js](http://projects.skratchdot.com/audio-files/build.js)
 - [data.json](http://projects.skratchdot.com/audio-files/data.json)
+- [dirs.json](http://projects.skratchdot.com/audio-files/dirs.json)
+- [groups.json](http://projects.skratchdot.com/audio-files/groups.json)
 - [index.html](http://projects.skratchdot.com/audio-files/index.html)
 
 ### Directory: /akwf/AKWF_0001
